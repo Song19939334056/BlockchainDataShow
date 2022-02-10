@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body >
+    <div class="page_header">
+        <div class="header_content">
+            <div class="h_c_logo">
+                <span>LOGO</span>
+            </div>
+            <div class="h_c_tabs">
+                <span>首页</span>
+                <span>|</span>
+                <span>最新活动</span>
+                <span>|</span>
+                <span>公司产品</span>
+                <span>|</span>
+                <span>企业中心</span>
+                <span>|</span>
+                <span>开发者</span>
+                <span>|</span>
+                <span>客户支持</span>
+                <span>|</span>
+                <span>合作与生态</span>
+            </div>
+        </div>
+    </div>
+    <div class="page_content">
+        <div class="content_title">
+            <div class="c_t">当前区块高度</div>
+        </div>
+        <div class="content_banner">
+            <div class="c_b_content">
+                <div class="c_b_img_big">
+                <div class="c_b_img">
+                    <div>
+                        图1
+                    </div>
+                    <div>'<'</div>
+                    <div>
+                        图2
+                    </div>
+                    <div>'<'</div>
+                    <div>
+                        图3
+                    </div>
+                    <div>'<'</div>
+                    <div>
+                        图4
+                    </div>
+                    <div>'<'</div>
+                    <div>
+                        图5
+                    </div>
+                    <div>'<'</div>
+                    <div>
+                        图1
+                    </div>
+                    <div>'<'</div>
+                    <div>
+                        图1
+                    </div>
+                    <div>'<'</div>
+                </div> 
+                </div>
+         
+                <div class="c_b_number">
+                    10001234
+                </div>
+            </div>
+        </div>
+        <div class="content_dataMap">
+            <div class="c_d_point1"></div>
+            <div class="c_d_point2"></div>
+            <div class="c_d_point3"></div>
+            <div class="c_d_point4"></div>
+            <div class="c_d_content">
+                <div class="c_d_top"></div>
+                <div class="c_d_left"></div>
+                <div class="c_d_right"></div>
+                <div class="c_d_bottom"></div>
+                <div class="c_d_woman"></div>
+                <div class="c_d_man"></div>
+            </div>
+            <div class="c_d_api">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function bannerMove() {
+        var dom = document.getElementsByClassName('c_b_img')[0]
+        var timeout =  setInterval(() => {
+            dom.style.left = dom.offsetLeft + (-1) + 'px';;
+            if(dom.style.left === '-134px'){
+                dom.style.left = '0px';
+                clearInterval(timeout)
+            }
+        }, 1);
+    }
+    function GetValueChange() {
+        const value = document.getElementsByClassName('c_b_number')[0]
+        setInterval(() => {
+            value.innerTEXT  = value.innerHTML++
+            bannerMove()
+        }, 5000);
+    }
+    GetValueChange()
+
+
+    /***js代码***/
+function handleScreen(){
+    const m = detectZoom();
+    document.body.style.zoom = 125/Number(m);
+}
+function detectZoom () {
+      let ratio = 0,
+        screen = window.screen,
+        ua = navigator.userAgent.toLowerCase();
+      if (window.devicePixelRatio !== undefined) {
+        ratio = window.devicePixelRatio;
+      } else if (~ua.indexOf('msie')) {
+        if (screen.deviceXDPI && screen.logicalXDPI) {
+          ratio = screen.deviceXDPI / screen.logicalXDPI;
+        }
+      } else if (window.outerWidth !== undefined && window.innerWidth !== undefined) {
+        ratio = window.outerWidth / window.innerWidth;
+      }
+      if (ratio) {
+        ratio = Math.round(ratio * 100);
+      }
+      return ratio;
+}
+
+function getWindowHeight() {
+    var zoom = document.body.style.zoom;
+    var height = $(window).height();
+    if (zoom) {
+        return height / zoom;
+    }
+    return height;
+}
+
+function getWindowWidth() {
+    var zoom = document.body.style.zoom;
+    var width = $(window).width();
+    if (zoom) {
+        return width / zoom;
+    }
+    return width;
+}
+
+window.onresize = function(){
+    handleScreen()
+}
+
+</script>
+
+</html>
