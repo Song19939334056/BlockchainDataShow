@@ -110,7 +110,6 @@
 }
 .content_dataMap{
     position: relative;
-    border: 1px solid red;
     margin-top: 30px;
 }
 .c_d_content{
@@ -124,7 +123,7 @@
 .c_d_content div:nth-child(-n + 4){
     border: 1px solid red;
     display: inline-block;
-    width: 10%;
+    width: 12%;
     height: 20%;
 }
 .c_d_content div:nth-child(n + 5){
@@ -168,12 +167,14 @@
     left: 78%;
 }
 .c_d_api{
-    border: 1px solid red;
     width: 52%;
     margin: 0 auto;
-    height: 200px;
+    min-height: 220px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
-.content_dataMap div:nth-child(-n+4){
+.content_dataMap>div:nth-child(-n+4){
     border: 1px solid red;
     display: inline-block;
     position: absolute
@@ -181,4 +182,64 @@
 .c_d_point1{
     height: 200px;
     width: 30px;
+    position: absolute;
+    top: 52%;
+    left: 26.5%;
+}
+.c_d_point2{
+    height: 100px;
+    width: 30px;
+    position: absolute;
+    top: 64%;
+    left: 37.5%;
+}
+.c_d_point3{
+    height: 100px;
+    width: 30px;
+    position: absolute;
+    top: 64%;
+    left: 60.5%;
+}
+.c_d_point4{
+    height: 200px;
+    width: 30px;
+    position: absolute;
+    top: 52%;
+    left: 71.5%;
+}
+.c_d_api>div{
+    border: 1px solid yellow !important;
+    width: 100px;
+}
+.c_d_api>div>div{
+    text-align: center;
+    padding: 3px 0px;
+}
+.c_d_a_img {
+    width: 100%;
+    border: 1px solid red;
+    height: 100px;
+}
+.bottom_content{
+    margin: 0 auto;
+    width: 52%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 5px;
+    padding: 10px;
+}
+.b_c_icp{
+    width: 15%;
+    text-align: right;
+}
+.b_c_bq{
+    width: 60%;
+    text-align: center;
+}
+.b_c_icp:hover{
+    color: blue;
+    cursor: pointer;
+}
+.c_d_a_title{
+    margin-bottom: -10px;
 }

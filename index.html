@@ -10,7 +10,7 @@
 
 </head>
 
-<body >
+<body>
     <div class="page_header">
         <div class="header_content">
             <div class="h_c_logo">
@@ -91,8 +91,39 @@
                 <div class="c_d_man"></div>
             </div>
             <div class="c_d_api">
-
+                <div>
+                    <div class="c_d_a_img"></div>
+                    <div class="c_d_a_title">日志基础</div>
+                    <div>API</div>
+                </div>
+                <div>
+                    <div class="c_d_a_img"></div>
+                    <div class="c_d_a_title">日志基础</div>
+                    <div>API</div>
+                </div>
+                <div>
+                    <div class="c_d_a_img"></div>
+                    <div class="c_d_a_title">日志基础</div>
+                    <div>API</div>
+                </div>
+                <div>
+                    <div class="c_d_a_img"></div>
+                    <div class="c_d_a_title">日志基础</div>
+                    <div>API</div>
+                </div>
+                <div>
+                    <div class="c_d_a_img"></div>
+                    <div class="c_d_a_title">日志基础</div>
+                    <div>API</div>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="page_bottom">
+        <div class="bottom_content">
+            <div class="b_c_icp"></div>
+            <div class="b_c_bq">COPYRIGHT © 2020 SFSDJ SFSDF INSTITUTE ALL RIGHTS RESERVED</div>
+            <div class="b_c_icp">京ICP备20007654号</div>
         </div>
     </div>
 </body>
@@ -117,9 +148,10 @@
     GetValueChange()
 
 
-    /***js代码***/
+    /***页面视图缩放视图不变***/
 function handleScreen(){
     const m = detectZoom();
+    console.log(m)
     document.body.style.zoom = 125/Number(m);
 }
 function detectZoom () {
@@ -140,29 +172,10 @@ function detectZoom () {
       }
       return ratio;
 }
-
-function getWindowHeight() {
-    var zoom = document.body.style.zoom;
-    var height = $(window).height();
-    if (zoom) {
-        return height / zoom;
-    }
-    return height;
-}
-
-function getWindowWidth() {
-    var zoom = document.body.style.zoom;
-    var width = $(window).width();
-    if (zoom) {
-        return width / zoom;
-    }
-    return width;
-}
-
 window.onresize = function(){
     handleScreen()
 }
-
+handleScreen()
 </script>
 
 </html>
