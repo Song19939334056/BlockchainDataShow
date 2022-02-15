@@ -8,8 +8,12 @@
     font-weight: normal;
     font-style: normal
 }
+body {
+    background: url(./asstes/bg.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
 .page_header {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #26293a;
     height: 50px;
     overflow: hidden;
     white-space: nowrap;
@@ -25,14 +29,18 @@
     align-items: center;
     overflow: hidden;
 }
+.content_title{
+    color: white;
+}
 .h_c_logo{
     font-size: 20px;
+    color: white;
 }
 .h_c_tabs{
     font-size: 13px;
     font-weight: 500;
     overflow: hidden;
-
+    color: white;
 }
 .h_c_tabs span:nth-child(2n+2){
     color: gray;
@@ -47,7 +55,7 @@
     line-height: 50px;
 }
 .h_c_tabs span:nth-child(2n+1):hover{
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid white;
     height: 47px;
     cursor: pointer;
 }
@@ -87,13 +95,13 @@
     white-space: nowrap;
 }
 .c_b_img div:nth-child(2n+1){
-    border: 1px solid blue;
     width: 100px;
     height: 100px;
     display: inline-block;
 }
 .c_b_img div:nth-child(2n+2){
-    border: 1px solid yellow;
+    line-height: 30px;
+    text-align: center;
     display: inline-block;
     height: 30px;
     width: 50px;
@@ -102,113 +110,264 @@
     font-family: 'Digital-7';
     font-size: 28px;
     color: #1ffeff;
-    border: 1px solid goldenrod;
     width: 17%;
     text-align: center;
     overflow: hidden;
     font-weight: bolder;
+    letter-spacing: 3px;
 }
 .content_dataMap{
     position: relative;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 .c_d_content{
     width: 52%;
-    border: 1px solid rgb(54, 54, 58);
-    margin: 0 auto;
+    margin: 0px auto;
     height: 550px;
     position: relative;
+    background:url(./asstes/10.png) no-repeat center;
+    background-size: 730px;
 
 }
 .c_d_content div:nth-child(-n + 4){
-    border: 1px solid red;
     display: inline-block;
-    width: 12%;
-    height: 20%;
-}
-.c_d_content div:nth-child(n + 5){
-    border: 1px solid blue;
-    display: inline-block;
-    width: 7%;
-    height: 30%;
+    width: 13%;
+    height: 24%;
+    z-index: 99;
 }
 .c_d_top{
     position: absolute;
-    top: 0px;
-    left: 50%;
+    top: -27px;
+    left: 49%;
     transform: translate(-50%, 0%); 
 }
 .c_d_left{
     position: absolute;
-    top: 50%;
-    left: 0%;
+    top: 41%;
+    left: -10px;
     transform: translate(0%, -50%); 
 }
 .c_d_right{
     position: absolute;
-    top: 50%;
-    right: 0%;
+    top: 43%;
+    right: -1%;
     transform: translate(0%, -50%); 
 }
 .c_d_bottom{
     position: absolute;
-    bottom: 0px;
+    bottom: 70px;
     left: 50%;
     transform: translate(-50%, 0%); 
 }
 .c_d_woman{
     position: absolute;
-    top: 22%;
+    top: 15%;
     left: 15%;
+    display: inline-block;
+    width: 9%;
+    height: 30%;
 }
 .c_d_man{
     position: absolute;
-    top: 39%;
-    left: 78%;
+    top: 29%;
+    left: 74%;
+    display: inline-block;
+    width: 9%;
+    height: 30%;
+}
+.c_d_gd1{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 45%;
+    top: 9%;
+     /* 动画名称 动画时长 延时时间 匀速 无限循环 逆播 */ 
+     animation:myfirst1 15s 0s linear  infinite alternate;
+}
+@keyframes myfirst1 {
+    0% {
+        transform: translate(0px,0px);
+    }
+    10% {
+        transform: translate(-200px,135px);
+    }
+    13% {
+        transform: translate(-175px,146px);
+    }
+    17% {
+        transform: translate(-260px,205px);
+    }
+    20% {
+        transform: translate(-285px,190px);
+    }
+    28% {
+        transform: translate(-315px,208px);
+    }
+    35% {
+        transform: translate(-315px,208px);
+    }
+    50% {
+        transform: translate(45px,395px);
+    }
+    55% {
+        transform: translate(45px,395px);
+    }
+    60% {
+        transform: translate(243px,265px);
+    }
+    63% {
+        transform: translate(220px,250px);
+    }
+    70% {
+        transform: translate(330px,175px);
+    }
+    80% {
+        transform: translate(0px,0px);
+    }
+}
+.c_d_gd2{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 45%;
+    top: 9%;
+     /* 动画名称 动画时长 延时时间 匀速 无限循环 逆播 */ 
+     animation:myfirst2 13s 2s linear  infinite;
+}
+@keyframes myfirst2 {
+    0% {
+        transform: translate(0px,0px);
+    }
+    3% {
+        transform: translate(-30px,22px);
+    }
+    6% {
+        transform: translate(-3px,37px);
+    }
+    20% {
+        transform: translate(-117px,111px);
+    }
+    30% {
+        transform: translate(13px,178px);
+    }
+    40% {
+        transform: translate(125px,100px);
+    }
+    50% {
+        transform: translate(305px,196px);
+    }
+    60% {
+        transform: translate(330px,175px);
+    }
+    85% {
+        transform: translate(0px,0px);
+    }
+    100% {
+        transform: translate(0px,0px);
+    }
+}
+.c_d_gd3{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 45%;
+    top: 9%;
+     /* 动画名称 动画时长 延时时间 匀速 无限循环 逆播 */ 
+     animation:myfirst3 10s 4s linear  infinite alternate;
+}
+@keyframes myfirst3 {
+    0% {
+        transform: translate(0px,0px);
+    }
+    3% {
+        transform: translate(-30px,22px);
+    }
+    6% {
+        transform: translate(-3px,37px);
+    }
+    10% {
+        transform: translate(-117px,111px);
+    }
+    20% {
+        transform: translate(13px,178px);
+    }
+    30% {
+        transform: translate(-132px,270px);
+    }
+    40% {
+        transform: translate(-285px,190px);
+    }
+    43% {
+        transform: translate(-315px,208px);
+    }
+    50% {
+        transform: translate(-315px,208px);
+    }
+    60% {
+        transform: translate(45px,395px);
+    }
+    65% {
+        transform: translate(45px,395px);
+    }
+    70% {
+        transform: translate(243px,265px);
+    }
+    73% {
+        transform: translate(220px,250px);
+    }
+    85% {
+        transform: translate(330px,175px);
+    }
+    100% {
+        transform: translate(0px,0px);
+    }
 }
 .c_d_api{
-    width: 52%;
+    width: 54%;
     margin: 0 auto;
     min-height: 220px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    color: white;
 }
 .content_dataMap>div:nth-child(-n+4){
-    border: 1px solid red;
     display: inline-block;
     position: absolute
 }
 .c_d_point1{
-    height: 200px;
-    width: 30px;
+    height: 180px;
+    width: 20px;
     position: absolute;
     top: 52%;
-    left: 26.5%;
+    left: 25.5%;
+    text-align: center;
 }
 .c_d_point2{
-    height: 100px;
-    width: 30px;
+    height: 60px;
+    width: 20px;
     position: absolute;
-    top: 64%;
+    top: 67.5%;
     left: 37.5%;
 }
 .c_d_point3{
-    height: 100px;
-    width: 30px;
+    height: 60px;
+    width: 20px;
     position: absolute;
-    top: 64%;
-    left: 60.5%;
+    top: 67.5%;
+    left: 61%;
 }
 .c_d_point4{
-    height: 200px;
-    width: 30px;
+    height: 180px;
+    width: 20px;
     position: absolute;
     top: 52%;
-    left: 71.5%;
+    left: 72.5%;
 }
 .c_d_api>div{
-    border: 1px solid yellow !important;
     width: 100px;
 }
 .c_d_api>div>div{
@@ -217,7 +376,6 @@
 }
 .c_d_a_img {
     width: 100%;
-    border: 1px solid red;
     height: 100px;
 }
 .bottom_content{
@@ -242,4 +400,38 @@
 }
 .c_d_a_title{
     margin-bottom: -10px;
+}
+.page_bottom {
+    border-top:1px solid #344d98;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+}
+.c_d_textborder{
+    /* border: 1px solid red; */
+    display: inline-block;
+    width: 100px;
+    color: white;
+    text-align: center;
+    line-height: 38px;
+    height: 35px;
+    font-size: 12px;
+    background: url(./asstes/4.png) no-repeat center;
+    position: absolute;
+}
+.textborder1{
+    top: 21%;
+    left: 43%;
+}
+.textborder2{
+    top: 55.5%;
+    left: -1%;
+}
+.textborder3{
+    top: 56.5%;
+    left: 88.3%;
+}
+.textborder4{
+    top: 89%;
+    left: 44%;
 }
