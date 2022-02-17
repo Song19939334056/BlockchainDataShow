@@ -21,7 +21,7 @@ body {
 }
 .header_content{
     margin: 0px 10px;
-    width: 52%;
+    width: 1024px;
     height: 50px;
     margin: 0 auto;
     display: flex;
@@ -73,17 +73,18 @@ body {
     text-align: center;
 }
 .c_b_content{
-    width: 52%;
-    margin: 0 auto;
+    width: 1024px;
+    margin: 20px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 .c_b_img_big{
-    width: 82%;
-    overflow: hidden;
+    width: 89%;
+    /* overflow: hidden; */
     position: relative;
-    height: 102px;
+    height: 110px;
+    float: right;
 }
 .c_b_img{
     overflow: hidden;
@@ -96,73 +97,80 @@ body {
 }
 .c_b_img div:nth-child(2n+1){
     width: 100px;
-    height: 100px;
+    height: 110px;
     display: inline-block;
 }
-.c_b_img div:nth-child(2n+2){
+.work_class_point{
     line-height: 30px;
     text-align: center;
     display: inline-block;
-    height: 30px;
-    width: 50px;
+    height: 10px;
+    width: 20px;
+    padding: 0px 10px;
+}
+.c_b_out{
+    overflow: hidden;
+    width: 96%;
 }
 .c_b_number{
     font-family: 'Digital-7';
     font-size: 28px;
     color: #1ffeff;
-    width: 17%;
+    width: 15%;
     text-align: center;
     overflow: hidden;
     font-weight: bolder;
-    letter-spacing: 3px;
+    letter-spacing: 7px;
 }
 .content_dataMap{
     position: relative;
-    margin-top: 60px;
-}
-.c_d_content{
-    width: 52%;
-    margin: 0px auto;
-    height: 550px;
-    position: relative;
-    background:url(./asstes/10.png) no-repeat center;
-    background-size: 730px;
+    width: 1024px;
+    margin: 60px auto;
 
 }
-.c_d_content div:nth-child(-n + 4){
+.c_d_content{
+    width: 1024px;
+    margin: 0px auto;
+    height: 650px;
+    position: relative;
+    background:url(./asstes/10.png) no-repeat center;
+    background-size: 850px;
+
+}
+.c_d_content>div:nth-child(-n + 4){
     display: inline-block;
-    width: 13%;
-    height: 24%;
+    width: 12%;
+    height: 23%;
     z-index: 99;
 }
 .c_d_top{
     position: absolute;
-    top: -27px;
-    left: 49%;
+    top: -45px;
+    left: 49.5%;
     transform: translate(-50%, 0%); 
 }
 .c_d_left{
     position: absolute;
-    top: 41%;
-    left: -10px;
+    top: 39%;
+    left: 40px;
     transform: translate(0%, -50%); 
 }
 .c_d_right{
     position: absolute;
-    top: 43%;
-    right: -1%;
+    top: 40%;
+    right: 5%;
     transform: translate(0%, -50%); 
 }
 .c_d_bottom{
     position: absolute;
-    bottom: 70px;
-    left: 50%;
+    bottom: 100px;
+    left: 49.5%;
     transform: translate(-50%, 0%); 
 }
 .c_d_woman{
     position: absolute;
-    top: 15%;
-    left: 15%;
+    top: 14.5%;
+    left: 19%;
     display: inline-block;
     width: 9%;
     height: 30%;
@@ -170,7 +178,7 @@ body {
 .c_d_man{
     position: absolute;
     top: 29%;
-    left: 74%;
+    left: 71%;
     display: inline-block;
     width: 9%;
     height: 30%;
@@ -180,8 +188,8 @@ body {
     width: 35px;
     height: 35px;
     position: absolute;
-    left: 45%;
-    top: 9%;
+    left: 46%;
+    top: 10.5%;
      /* 动画名称 动画时长 延时时间 匀速 无限循环 逆播 */ 
      animation:myfirst1 15s 0s linear  infinite alternate;
 }
@@ -190,37 +198,37 @@ body {
         transform: translate(0px,0px);
     }
     10% {
-        transform: translate(-200px,135px);
+        transform: translate(-240px,155px);
     }
-    13% {
-        transform: translate(-175px,146px);
+     13% {
+        transform: translate(-200px,170px); 
     }
     17% {
-        transform: translate(-260px,205px);
+        transform: translate(-300px,230px);
     }
-    20% {
-        transform: translate(-285px,190px);
+     20% {
+        transform: translate(-335px,215px);
     }
-    28% {
-        transform: translate(-315px,208px);
+     28% {
+        transform: translate(-365px,235px);
     }
     35% {
-        transform: translate(-315px,208px);
+        transform: translate(-365px,235px);
     }
     50% {
-        transform: translate(45px,395px);
+        transform: translate(45px,455px);
     }
     55% {
-        transform: translate(45px,395px);
+        transform: translate(45px,455px);
     }
     60% {
-        transform: translate(243px,265px);
+        transform: translate(280px,305px);
     }
     63% {
-        transform: translate(220px,250px);
+        transform: translate(255px,290px);
     }
     70% {
-        transform: translate(330px,175px);
+        transform: translate(380px,200px);
     }
     80% {
         transform: translate(0px,0px);
@@ -231,8 +239,8 @@ body {
     width: 35px;
     height: 35px;
     position: absolute;
-    left: 45%;
-    top: 9%;
+    left: 46%;
+    top: 10.5%;
      /* 动画名称 动画时长 延时时间 匀速 无限循环 逆播 */ 
      animation:myfirst2 13s 2s linear  infinite;
 }
@@ -241,25 +249,25 @@ body {
         transform: translate(0px,0px);
     }
     3% {
-        transform: translate(-30px,22px);
+        transform: translate(-35px,22px);
     }
     6% {
         transform: translate(-3px,37px);
     }
     20% {
-        transform: translate(-117px,111px);
+        transform: translate(-135px,125px);
     }
     30% {
-        transform: translate(13px,178px);
+        transform: translate(10px,200px);
     }
     40% {
-        transform: translate(125px,100px);
+        transform: translate(140px,115px);
     }
     50% {
-        transform: translate(305px,196px);
+        transform: translate(350px,220px);
     }
     60% {
-        transform: translate(330px,175px);
+        transform: translate(380px,200px);
     }
     85% {
         transform: translate(0px,0px);
@@ -273,8 +281,8 @@ body {
     width: 35px;
     height: 35px;
     position: absolute;
-    left: 45%;
-    top: 9%;
+    left: 46%;
+    top: 10.5%;
      /* 动画名称 动画时长 延时时间 匀速 无限循环 逆播 */ 
      animation:myfirst3 10s 4s linear  infinite alternate;
 }
@@ -283,55 +291,53 @@ body {
         transform: translate(0px,0px);
     }
     3% {
-        transform: translate(-30px,22px);
+        transform: translate(-35px,22px);
     }
     6% {
         transform: translate(-3px,37px);
     }
     10% {
-        transform: translate(-117px,111px);
+        transform: translate(-135px,125px);
     }
     20% {
-        transform: translate(13px,178px);
+        transform: translate(10px,200px);
     }
     30% {
-        transform: translate(-132px,270px);
+        transform: translate(-162px,310px);
     }
     40% {
-        transform: translate(-285px,190px);
+        transform: translate(-335px,215px);
     }
     43% {
-        transform: translate(-315px,208px);
+        transform: translate(-365px,235px);
     }
     50% {
-        transform: translate(-315px,208px);
+        transform: translate(45px,455px);
     }
     60% {
-        transform: translate(45px,395px);
+        transform: translate(280px,305px);
     }
     65% {
-        transform: translate(45px,395px);
+        transform: translate(255px,290px);
     }
     70% {
-        transform: translate(243px,265px);
+        transform: translate(380px,200px);
     }
-    73% {
-        transform: translate(220px,250px);
-    }
-    85% {
-        transform: translate(330px,175px);
+    90% {
+        transform: translate(380px,200px);
     }
     100% {
         transform: translate(0px,0px);
     }
 }
 .c_d_api{
-    width: 54%;
+    width: 1024px;
     margin: 0 auto;
     min-height: 220px;
+    
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
 }
 .content_dataMap>div:nth-child(-n+4){
@@ -342,45 +348,48 @@ body {
     height: 180px;
     width: 20px;
     position: absolute;
-    top: 52%;
-    left: 25.5%;
+    top: 55%;
+    left: 9%;
     text-align: center;
 }
 .c_d_point2{
     height: 60px;
     width: 20px;
     position: absolute;
-    top: 67.5%;
-    left: 37.5%;
+    top: 69%;
+    left: 29%;
 }
 .c_d_point3{
     height: 60px;
     width: 20px;
     position: absolute;
-    top: 67.5%;
-    left: 61%;
+    top: 69%;
+    left: 68.8%;
 }
 .c_d_point4{
     height: 180px;
     width: 20px;
     position: absolute;
-    top: 52%;
-    left: 72.5%;
+    top: 55%;
+    left: 88.5%;
 }
 .c_d_api>div{
-    width: 100px;
+    width: 204.8px;
+    text-align: center;
+
 }
 .c_d_api>div>div{
     text-align: center;
     padding: 3px 0px;
 }
 .c_d_a_img {
-    width: 100%;
+    width: 100px;
     height: 100px;
+    margin: 0 auto;
 }
 .bottom_content{
     margin: 0 auto;
-    width: 52%;
+    width: 1024px;
     display: flex;
     justify-content: space-between;
     font-size: 5px;
@@ -399,7 +408,16 @@ body {
     cursor: pointer;
 }
 .c_d_a_title{
+    /* margin-bottom: -10px; */
+}
+.c_d_a_latestBlock{
     margin-bottom: -10px;
+    font-size: 12px;
+    /* white-space: nowrap; */
+}
+.c_d_a_totalNumber{
+    /* white-space: nowrap; */
+    font-size: 12px;
 }
 .page_bottom {
     border-top:1px solid #344d98;
@@ -408,30 +426,63 @@ body {
     color: white;
 }
 .c_d_textborder{
-    /* border: 1px solid red; */
     display: inline-block;
-    width: 100px;
     color: white;
-    text-align: center;
-    line-height: 38px;
-    height: 35px;
+    height: 40px;
+    margin: 0 10px;
     font-size: 12px;
-    background: url(./asstes/4.png) no-repeat center;
+    background-color: #0b4cb4;
+    border-radius: 20px;
+    padding: 0 10px;
+    /* background: url(./asstes/4.png) no-repeat center; */
     position: absolute;
+    white-space: nowrap;
+
 }
 .textborder1{
-    top: 21%;
-    left: 43%;
+    top: 25%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);    /* 50%为自身尺寸的一半 */
 }
 .textborder2{
-    top: 55.5%;
-    left: -1%;
+    top: 59%;
+    left: 8.8%;
+    transform: translate(-50%, -50%);    /* 50%为自身尺寸的一半 */
 }
 .textborder3{
-    top: 56.5%;
-    left: 88.3%;
+    top: 61%;
+    left: 88%;
+    transform: translate(-50%, -50%);    /* 50%为自身尺寸的一半 */
 }
 .textborder4{
-    top: 89%;
-    left: 44%;
+    top: 93%;
+    left: 48.5%;
+    transform: translate(-50%, -50%);    /* 50%为自身尺寸的一半 */
+}
+.s_j::after{
+    content: '';
+    border: 6px solid white;
+    content: '';
+    border: 6px dashed #0b4cb4;
+    border-right: 6px solid rgba(255, 255, 255, 0);
+    border-left: 6px solid rgba(255, 255, 255, 0);
+    border-top: 6px solid rgba(255, 255, 255, 0);
+    border-right: 6px solid rgba(255, 255, 255, 0);
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-35%, 0%);    /* 50%为自身尺寸的一半 */
+}
+.c_d_blockNumber{
+    width: 100%;
+    line-height: 20px;
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 5px;
+}
+.c_d_nodeId{
+    width: 100%;
+    margin-top: -5px;
+    /* border: 1px solid red; */
+    text-align: center;
 }
